@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --main-color: #cb616b;
+    --action-color: #82c290;
+    --tints:#fdf2e9;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family:"sans-serif";
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+/* .container {
+    margin-left: 40px;
+}
+
+
+.actionButton {
+    background-color: var(--action-color) !important;
+    width: 190px;
+    left: -6px;
+    height: 40px;
+}
+
+.btn {
+    margin-left: 7px;
+    margin-top: 10px;
+}
+
+.text {
+    font-weight: bolder;
+} */
