@@ -7,7 +7,7 @@
     background-color: #fdf2e9;
   }
   
-  .meal {
+  /* .meal {
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
     border-radius: 11px;
     overflow: hidden;
@@ -21,8 +21,44 @@
   
   .meal-content {
     padding: 3.2rem 4.8rem 4.8rem 4.8rem;
-  }
-  
+  } */
+  /* car-list.component.css */
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  position: relative; /* Add this */
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+/* Make the Learn More button sticky */
+.btn--fulls {
+  position: sticky;
+  bottom: 0;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn--fulls:hover {
+  background-color: #45a049;
+}
+
   .meal-tags {
     margin-bottom: 1.2rem;
     display: flex;
@@ -84,3 +120,48 @@
     text-align: center;
     font-size: 1.8rem;
   }
+  .search-input {
+  padding: 8px;
+  border: 1px solid #f19275;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+/* car-list.component.css */
+
+/* car-list.component.css */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  background-color: #f87428; /* Default button background color */
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.page-button.disabled {
+  background-color: #f9bb99; /* Faded button background color */
+  cursor: default;
+}
+
+/* .page-button:hover {
+  background-color: #ec7637; 
+} */
+
+.page-number {
+  font-size: 18px;
+  margin: 0 10px;
+  font-weight: bold;
+}

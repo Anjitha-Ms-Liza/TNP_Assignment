@@ -12,9 +12,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './parent/child/child.component';
-import { FiletrComponent } from './filetr/filetr.component';
 import { PipesPipe } from './pipes.pipe';
 import { HeaderComponent } from './header/header.component';
 import { ModelsComponent } from './models/models.component';
@@ -22,18 +19,18 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { FooterComponent } from './footer/footer.component';
 import { IonicModule } from '@ionic/angular';
 import { HttpClientModule} from '@angular/common/http';
+import { CarDetailsComponent } from './car-details/car-details.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ParentComponent,
-    ChildComponent,
-    FiletrComponent,
     PipesPipe,
     HeaderComponent,
     ModelsComponent,
     VehiclesComponent,
-    FooterComponent
+    FooterComponent,
+    CarDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +45,8 @@ import { HttpClientModule} from '@angular/common/http';
     FlexLayoutModule,
     MatToolbarModule,
     IonicModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
