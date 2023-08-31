@@ -18,7 +18,10 @@ import { FiletrComponent } from './filetr/filetr.component';
 import { PipesPipe } from './pipes.pipe';
 import { HeaderComponent } from './header/header.component';
 import { ModelsComponent } from './models/models.component';
-
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { FooterComponent } from './footer/footer.component';
+import { IonicModule } from '@ionic/angular';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { ModelsComponent } from './models/models.component';
     FiletrComponent,
     PipesPipe,
     HeaderComponent,
-    ModelsComponent
+    ModelsComponent,
+    VehiclesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +46,9 @@ import { ModelsComponent } from './models/models.component';
     MatInputModule,
     MatIconModule,
     FlexLayoutModule,
-    MatToolbarModule
+    MatToolbarModule,
+    IonicModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
