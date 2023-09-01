@@ -1,79 +1,38 @@
-.section-modelx {
-    background-color: #fdf2e9;
-    padding: 4.8rem 0 9.6rem 0;
-}
+/* car-detail.component.css */
 
-.modelx-primary {
-    color: #333;
-    font-size: 5.2rem;
-    font-weight: 700;
-    margin-bottom: 3.2rem;
-}
-.modelx-subtext {
-    color: #333;
-    font-size: 3.2rem;
-    font-weight: 700;
-    margin-bottom: 3.2rem;
-}
-
-.modelx-description {
-    font-size: 2rem;
-    line-height: 2.6rem;
-    margin-bottom: 4.8rem;
-}
-
-.margin-right-sm {
-    margin-right: 1.6rem !important;
-}
-
-.modelx-img {
-    width: 100%
-}
-
-.modelx {
-    max-width: 130rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 9.6rem;
-}
-
-.btn:link,
-.btn:visited {
-    display: inline-block;
-    font-size: 2rem;
-    padding: 1.6rem 3.2rem;
-    border-radius: 9px;
-    text-decoration: none;
-    transition: background-color 1s;
-}
-
-.btn--full:link,
-.btn--full:visited {
-    background-color: #e67e22;
-    color: #ffff;
-}
-
-.btn--full:hover,
-.btn--full:active {
-    background-color: #cf711f;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-    background-color: #fff;
-    color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-    background-color: #fdf2e9;
-    box-shadow: inset 0 0 0 3px #fff;
-}
-
-.section-features{
-padding:9.6rem 0;
-background-color: #e67e22;
-}
+.color-selection {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .color-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .color-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .red {
+    background-color: red;
+    color: rgb(0, 0, 0);
+  }
+  
+  .blue {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+  }
+  
+  .green {
+    background-color: rgb(207, 216, 207);
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Add more styling as needed */
+  

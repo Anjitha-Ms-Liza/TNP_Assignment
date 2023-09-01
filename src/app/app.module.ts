@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { IonicModule } from '@ionic/angular';
 import { HttpClientModule} from '@angular/common/http';
 import { CarDetailsComponent } from './car-details/car-details.component';
+import { CustomizationComponent } from './customization/customization.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { CarDetailsComponent } from './car-details/car-details.component';
     ModelsComponent,
     VehiclesComponent,
     FooterComponent,
-    CarDetailsComponent
+    CarDetailsComponent,
+    CustomizationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<section class="section-modelx">
+<section class="section-models">
     <h2>{{car.model_name}}</h2>
     <div class="modelx">
         <div class="modelx-text-box">
@@ -7,11 +7,23 @@
             <p class="modelx-description">The Tesla Model X: A groundbreaking electric SUV, blending innovation, power,
                 and sustainability. Futuristic design, rapid acceleration, spacious interior, and advanced safety
                 features. Redefining luxury and efficiency in one package.</p>
-            <a href="#" class="btn btn--full margin-right-sm">Order Now</a>
-            <a href="#" class="btn btn--outline margin-right-sm">Demo Drive</a>
+            <a href="/car-details" class="btn btn--full margin-right-sm">Order Now</a>
+            <a href="/car-build" class="btn btn--outlines margin-right-sm">Buils & Price</a>
         </div>
         <div class="modelx-img-box">
-            <img src="../../assets/modelx6.jpg" class="modelx-img" alt="collage of modelx" />
+            <!-- <img src="../../assets/modelx6.jpg" class="modelx-img" alt="collage of modelx" /> -->
+            <div class="modelx-img">
+                <img [src]="carImage" [alt]="selectedColor" />
+              </div>              
         </div>
     </div>
 </section>
+<div class="color-selection">
+    <h2>Select Car Color</h2>
+  
+    <div class="color-selector">
+      <button (click)="changeColor('red')" class="color-button red">Red</button>
+      <button (click)="changeColor('blue')" class="color-button blue">Blue</button>
+      <button (click)="changeColor('green')" class="color-button green">White</button>
+    </div>
+  </div>
